@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies</title>   
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> 
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="css/jCirclize.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><h5>Movies <i class=" fas fa-film"></i></h5></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" id= "home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="topMovies">Our Movie Selections</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="tvShows">Tv shows</a>
+      
+    </ul>
+  </div>
+</nav>
+<!--Home page(search page)-->
+<div class="container-fluid container">
+          <div class="autoComplete home"></div>
+            <div class="summary">      
+            </div>
+          <div class = "relatedMoviesContainer">
+            <h1 class = " relatedMoviesHeader"></h1>
+            <div class="relatedMovies"></div>
+
+          </div>            
+        
+          
+
+        <!--Home page(search page)--ends-->
+        <!--Top movie page(list page)-->
+        <div class="movieSelection">
+          <h1> Our Current Selections </h1>
+          <div class = "topmovies row">
+          </div>
+        </div>
+            
+       
+
+          <!--Tv SHow section-->
+
+        <div class="container">
+        
+          <div class = "tvShows row">
+          </div>  
+        </div>
+
+</div>
+
+
+ <div class="info">
+  <div class="display container">
+    </div>
+   </div>
+
+
+
+
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="//code.jquery.com/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="utilis.js"></script>
+<script src="js/jquery.jCirclize.js"></script>
+
+
+<script src="app.js"></script>
+<script src="event.js"></script>
+
+
+</html>

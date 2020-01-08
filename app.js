@@ -8,6 +8,7 @@ const input = document.querySelector('.input');
 const dropdown = document.querySelector(".dropdown");
 const summary = document.querySelector('.summary');
 const relatedMovies = document.querySelector('.relatedMovies');
+const relatedMoviesContainer = document.querySelector('.relatedMoviesContainer');
 const relatedMoviesHeader = document.querySelector('.relatedMoviesContainer h1');
 
 const onInput = async e => {

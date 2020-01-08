@@ -1,7 +1,6 @@
 const container = document.querySelector('.container-fluid');
 const home = document.querySelector('.home');
 const movieSelection = document.querySelector('.movieSelection');
-const summary = document.querySelector('.summary');
 const topmovies = document.querySelector('.topmovies');
 const tvShows = document.querySelector('.tvShows');
 const info = document.querySelector('.info');
@@ -21,11 +20,13 @@ window.addEventListener('click', (e) => {
 		topmovies.style.display = 'flex';
 		tvShows.style.display = 'none';
 		info.style.display = 'none';
+		relatedMoviesContainer.style.display = 'none';
 	} else if (e.target.id == 'tvShows') {
 		container.style.display = 'block';
 		home.style.display = 'none';
 		movieSelection.style.display = 'none';
 		tvShows.style.display = 'block';
+		summary.style.display = 'none';
 	}
 });
 

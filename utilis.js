@@ -40,7 +40,9 @@ const listMovies = (movies) => {
             input.value = movie.Title;
             dropdown.style.display = 'none';
             moveSelected(movie.imdbID);
+            relatedMoviesContainer.style.display = 'block';
             relatedMoviesHeader.innerHTML = 'Related Search';
+            relatedMovies.style.display = 'flex';
         })
 
     }
@@ -54,7 +56,6 @@ const relatedMoviesDisplay = (movies) => {
         relatedMovies.appendChild(div);
         div.addEventListener('click', () => {
             moveSelected(movie.imdbID);
-            relatedMovies.innerHTML = '';
         })
     }
 

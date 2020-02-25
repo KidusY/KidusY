@@ -1,6 +1,6 @@
 //fetches data from the omdbapi server
 const fetchData = async (req) => {
-    const response = await axios.get("http://www.omdbapi.com/", {
+    const response = await axios.get("https://www.omdbapi.com/", {
         //api search params 
         params: {
             apikey: '24dc8b1',
